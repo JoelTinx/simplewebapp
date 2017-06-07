@@ -3,14 +3,14 @@ package main
 import (
 	"log"
 	"net/http"
-	"controllers"
+	"handlers"
 )
 
 func main()  {
 	fs := http.FileServer(http.Dir("public"))
   http.Handle("/public/", http.StripPrefix("/public/", fs))
 
-  http.HandleFunc("/",          controllers.IndexController)
+  http.HandleFunc("/",          handlers.IndexController)
 
   port := os.Getenv("PORT")
   if port == "" {
