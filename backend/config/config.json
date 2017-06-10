@@ -1,7 +1,5 @@
 {
-	"user": "root",
-	"host": "localhost",
-	"pass": "unpass",
-	"dbna": "bstest",
-	"post": "3306"
+	"port": 3000,
+	"enviroment": "development",
+	"name": "Simple Web App"
 }
