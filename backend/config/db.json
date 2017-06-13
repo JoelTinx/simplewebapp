@@ -1,7 +1,24 @@
 {
-	"user": "root",
-	"host": "localhost",
-	"pass": "unpass",
-	"dbna": "bstest",
-	"port": "3306"
+	"development": {
+		"user": "root",
+		"host": "localhost",
+		"pass": "unpass",
+		"dbna": "dbDevelopment",
+		"port": "3306"
+  	},
+  	"test": {
+		"user": "root",
+		"host": "localhost",
+		"pass": "unpass",
+		"dbna": "dbTest",
+		"port": "3306"
+  	},
+  	"production": {
+		"user": "root",
+		"host": "localhost",
+		"pass": "unpass",
+		"dbna": "bstest",
+		"port": "3306"
+  }
+
 }
