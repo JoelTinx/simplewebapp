@@ -16,6 +16,10 @@ func main()  {
 
 
 	// Session required path's
+	http.HandleFunc("/api/v1/path01", 	handlers.ManagerController)
+	http.HandleFunc("/api/v1/path02", 	handlers.ManagerController)
+	http.HandleFunc("/api/v1/path03", 	handlers.ManagerController)
+
 
   port := os.Getenv("PORT")
   if port == "" {
