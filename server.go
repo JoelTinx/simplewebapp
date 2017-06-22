@@ -14,6 +14,9 @@ func main()  {
   http.HandleFunc("/login",     handlers.LoginController)
   http.HandleFunc("/admin", 	handlers.ManagerController)
 
+
+	// Session required path's
+
   port := os.Getenv("PORT")
   if port == "" {
     port = "8080"
