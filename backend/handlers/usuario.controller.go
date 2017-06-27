@@ -9,3 +9,19 @@ const (
 func GetallUser() {
 	
 }
+
+func PostUser() {
+
+}
+
+func UpdateUser() {
+
+}
+
+func DeleteUser() {
+
+}
+
+func ChangePassword() {
+	
+}
