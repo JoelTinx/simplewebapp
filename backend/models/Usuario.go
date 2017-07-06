@@ -6,5 +6,21 @@ type User struct {
 }
 
 func GetAllUser() ([]User, error){
-	
+
+}
+
+func PostUser() (int, error) {
+
+}
+
+func PutUser() (int, error) {
+
+}
+
+func DeleteUser() (int, error) {
+
+}
+
+func GetUser() (User, error) {
+
 }
