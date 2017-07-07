@@ -7,7 +7,7 @@ import (
 )
 
 func init()  {
-
+	log.Println("Inicializando servicios base")
 }
 
 const (
