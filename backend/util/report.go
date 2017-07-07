@@ -13,5 +13,9 @@ func PageHeader() {
 }
 
 func PageFooter() {
-	
+
+}
+
+func GenerateReport()  {
+
 }

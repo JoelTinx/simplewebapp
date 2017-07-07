@@ -8,6 +8,10 @@ func SendMail(e Email) (error) {
 
 }
 
-func SendMasivemail() {
-	
+func SendMasivemail(es []Email) {
+
+}
+
+func GetTemplateHTMLEmail()  {
+
 }
