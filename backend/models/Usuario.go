@@ -6,7 +6,10 @@ type User struct {
 }
 
 func GetAllUser() ([]User, error){
-
+	conn, err := getConnection()
+	if err != nil {
+		panic(err)
+	}
 }
 
 func PostUser() (int, error) {
