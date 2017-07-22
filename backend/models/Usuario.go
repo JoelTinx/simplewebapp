@@ -34,12 +34,50 @@ func GetAllUser() ([]User, error) {
 	return users, err
 }
 
-func PostUser() (int, error) {
+func PostUser(u User) (int, error) {
+	db, err := getConnection()
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	defer db.Close()
 
+	st, err := db.Prepare("call SIS_user_insert();")
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	defer st.Close()
+
+	rows, err := st.Execute()
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	defer rows.Close()
+
+	
+	return 1, err
 }
 
 func PutUser() (int, error) {
+	db, err := getConnection()
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	defer db.Close()
 
+	st, err := db.Prepare("call SIS_user_update();")
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	defer st.Close()
+
+	rows, err := st.Execute()
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	defer rows.Close()
+
+	
+	return 1, err
 }
 
 func DeleteUser() (int, error) {
