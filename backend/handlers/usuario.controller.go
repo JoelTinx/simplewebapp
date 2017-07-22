@@ -7,7 +7,10 @@ const (
 )
 
 func GetallUser() {
-
+	users, err := models.GetallUser()
+	if err != nil {
+		panic(err)
+	}
 }
 
 func PostUser() {
@@ -18,7 +21,7 @@ func UpdateUser() {
 
 }
 
-func DeleteUser() {
+func DeleteUser(cCodUsuSis string) {
 
 }
 
