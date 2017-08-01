@@ -15,3 +15,7 @@ func SendMasivemail(es []Email) {
 func GetTemplateHTMLEmail()  {
 
 }
+
+func SendEmailError(message string) {
+
+}
