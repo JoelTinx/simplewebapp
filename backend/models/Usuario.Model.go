@@ -110,7 +110,7 @@ func GetUser() (User, error) {
 	}
 	defer db.Close()
 
-	st, err := db.Prepare("call SIS_user_list();")
+	st, err := db.Prepare("call SIS_user_detail();")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
