@@ -7,6 +7,13 @@ import (
 )
 
 func main() {
-  app := http.
-  app.ListenAndServe(":8080")
-}// Aquí el servidor
+  fs := http.FileServer(http.Dir("public"))
+  http.Handle("/public/", http.StripPrefix("/public/", fs))
+
+  port := os.Getenv("PORT")
+  if port == "" {
+    port = "8080"
+  }
+
+  http.ListenAndServe(":" + port)
+}
