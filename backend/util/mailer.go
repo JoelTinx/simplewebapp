@@ -24,7 +24,7 @@ func SendEmailError(message string) {
 		Content: "Error en: " + message,
 	}
 	e.From = "uncorreo@gmail.com"
-	pass, _ := base64.StdEncoding.DecodeString("asdasfasd")
+	pass, _ := base64.StdEncoding.DecodeString("x123456v")
 	e.To = "otrocorreo@hotmail.com"
 
 	message := "From: " + e.From + "\n" +
