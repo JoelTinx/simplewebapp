@@ -3,8 +3,16 @@ angular.module('')
       $scope.usuarios = [];
       $scope.usuario = {};
 
-      $scope.getUsuarios = function() {
+      $scope.GetUsuarios = function() {
         
+      };
+
+      $scope.PostUsuarios = function () {
+
+      };
+      
+      $scope.PutUsuarios = function () {
+
       };
       
   });
