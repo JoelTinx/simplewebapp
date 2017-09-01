@@ -37,3 +37,7 @@ func main()  {
   log.Printf("Listening in port: %s", port)
   http.ListenAndServe(":" + port, nil)
 }
+
+/*
+Configurar variables de entorno desde la terminal
+*/

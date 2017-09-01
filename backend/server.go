@@ -20,3 +20,7 @@ func main() {
 
   http.ListenAndServe(":" + port)
 }
+
+/*
+Configurar variables de entorno desde la terminal
+*/
