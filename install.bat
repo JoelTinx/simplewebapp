@@ -1,1 +1,2 @@
-go get govendor
+-- instalar glide
+glide install
